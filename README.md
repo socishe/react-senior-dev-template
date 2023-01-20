@@ -5,6 +5,6 @@ This repository is a startup repository for all new projects that are large scal
 You can then run the script by running ``yarn create-component fc path/to/component`` or ``yarn create-component cc path/to/component`` in the command line, where ``path/to/component`` is the path where you want to create the component, including the folder and the component name.
 
 To run this repository into your local you will need to follow these steps below:
-1. ``git clone https://github.com/socishe/socishe-reactjs-senior-dev-template.git``
-2. inside the socishe-reactjs-senior-dev-template folder you will have to run ``yarn install``
+1. ``git clone https://github.com/socishe/react-senior-dev-template.git``
+2. inside the react-senior-dev-template folder you will have to run ``yarn install`` to install the depandancies
 3. To run the project run ``yarn start``
