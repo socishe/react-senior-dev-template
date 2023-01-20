@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import NewPlace from './places/pages/NewPlace'
+import Redirect from './shared/components/Redirect'
+import Users from './users/pages/Users'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+type Props = {}
+
+const App = (props: Props) => {
+  return <BrowserRouter>
+    <Routes  >
+      <Route path='/' element={<Users />} />
+      <Route path='/places/new' element={<NewPlace />} />
+      {/* Implementation of the redirect  in react-router-dom v6 */}
+      {/* <Route path='*' element={<Navigate to="/" replace />} /> */}
+      <Route path="*" element={<Redirect to="/" />} />
+    </Routes>
+  
+  </BrowserRouter>
 }
 
-export default App;
+export default App

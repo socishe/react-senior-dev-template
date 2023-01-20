@@ -1,0 +1,1 @@
+# ${componentName} component documentation

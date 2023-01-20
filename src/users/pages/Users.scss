@@ -1,0 +1,7 @@
+@import '../../../scss/global.scss';
+.users{
+    color: red;
+    @include laptop{
+        font-size: 20px;
+    }
+}
