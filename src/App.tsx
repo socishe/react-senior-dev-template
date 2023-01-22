@@ -2,7 +2,7 @@ import React from 'react'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import NewPlace from './places/pages/NewPlace'
 import Redirect from './shared/components/Redirect'
-import Users from './users/pages/Users'
+import Users from './user/pages/Users'
 
 type Props = {}
 

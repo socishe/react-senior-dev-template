@@ -1,8 +1,17 @@
 import React from 'react'
+import UserItem from './UserItem'
 import './UsersList.scss'
-type Props = {
-    items: string[]
+
+type User ={
+    id: string,
+    image: string,
+    name: string;
+    places: number
 }
+type Props = {
+    items: User[]
+}
+
 
 const UsersList = (props: Props) => {
     const {items} = props;
@@ -14,7 +23,11 @@ const UsersList = (props: Props) => {
         )
     }
   return (
-    <div>UsersList</div>
+    <ul>
+        {items.map((user: User) =>
+             <UserItem key={user.id} id={user.id} image={user.image} name={user.name} placesCount={user.places} />
+        )}
+    </ul>
   )
 }
 
